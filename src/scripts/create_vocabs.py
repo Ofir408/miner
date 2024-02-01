@@ -5,7 +5,7 @@ import pandas as pd
 
 
 def _create_vocab_mapping(vocab: List[str], output_file: str) -> None:
-    vocab = ['<unk>', '<pad>'] + vocab
+    vocab = ['unk', 'pad'] + vocab
     vocab2id = {vocab_text: idx for idx, vocab_text in enumerate(vocab)}
     with open(output_file, 'w') as json_file:
         json.dump(vocab2id, json_file, indent=2)

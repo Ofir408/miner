@@ -1,8 +1,8 @@
 # Common args
 --model_name Miner
 --pretrained_tokenizer bert-base-uncased
---user2id_path data/user2id.json
---category2id_path data/category2id.json
+--user2id_path /home/benshoho/projects/RS/miner/vocabs/user2id.json
+--category2id_path /home/benshoho/projects/RS/miner/vocabs/category2id.json
 --max_title_length 32
 --max_sapo_length 64
 --his_length 50
