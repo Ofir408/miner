@@ -1,6 +1,6 @@
 # Common args
 --model_name Miner
---pretrained_tokenizer vinai/phobert-base
+--pretrained_tokenizer bert-base-uncased
 --user2id_path data/user2id.json
 --category2id_path data/category2id.json
 --max_title_length 32
@@ -10,14 +10,14 @@
 --metrics auc
 
 # Data args
---data_name CafeF_News_Recommend_Data
---train_behaviors_path data/train/behaviors.tsv
---train_news_path data/train/news.tsv
---eval_behaviors_path data/valid/behaviors.tsv
---eval_news_path data/valid/news.tsv
+--data_name mind
+--train_behaviors_path /home/benshoho/projects/RS/data/MIND_small/train/behaviors.tsv
+--train_news_path /home/benshoho/projects/RS/data/MIND_small/train/news.tsv
+--eval_behaviors_path /home/benshoho/projects/RS/data/MIND_small/dev/behaviors.tsv
+--eval_news_path /home/benshoho/projects/RS/data/MIND_small/dev/news.tsv
 
 # Model args
---pretrained_embedding vinai/phobert-base
+--pretrained_embedding bert-base-uncased
 --apply_reduce_dim
 --use_sapo
 --word_embed_dim 256
